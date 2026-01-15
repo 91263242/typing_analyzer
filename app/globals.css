@@ -1,0 +1,56 @@
+:root {
+  /* Dark theme colors (Monkeytype style) */
+  --bg-main: #323437;
+  --bg-sub: #2c2e31;
+  --bg-sub-alt: #262829;
+  --text-main: #e2b714;
+  --text-sub: #646669;
+  --text-error: #ca4754;
+  --caret-color: #e2b714;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-sub-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-sub);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-sub);
+}
